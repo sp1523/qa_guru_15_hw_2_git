@@ -12,9 +12,10 @@ public class Hw2 {
 
     @Test
     void Hw2() {
-        open("https://www.google.com/");
-        $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://selenide.org"));
+        Configuration.browser = FIREFOX;
 
+         open("https://www.google.com/");
+        $("[name=q]").setValue("selenide").pressEnter();
+        $("[id=search]").shouldHave(text("https://ru.selenide.org"));
     }
 }
