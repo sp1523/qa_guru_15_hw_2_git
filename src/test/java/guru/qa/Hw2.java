@@ -14,7 +14,7 @@ public class Hw2 {
     void Hw2() {
 
         open("https://www.google.com/");
-        $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://selenide.org"));
+        $("[name=q]").setValue("selenium").pressEnter();
+        $("[id=search]").shouldHave(text("https://www.selenium.dev"));
     }
 }
